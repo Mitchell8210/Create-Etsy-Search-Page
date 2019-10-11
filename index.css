@@ -1,0 +1,257 @@
+html{ box-sizing: border-box}
+*,*::before,*::after{box-sizing: inherit}
+
+.container{
+    width:1200px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 300px;
+}
+
+   
+
+.search{
+    display: flex;
+    height:50px;
+    margin-top:15px;
+    align-items: baseline;
+}
+.logo{
+    color:rgb(236,85,38);
+    font-size: 45px;
+    margin-right: 6px;
+    
+
+}
+.search-bar input{
+    width:800px;
+    height:45px;
+    border-radius: 25px;
+    background-color: rgb(239,239,239);
+    font-size: 15px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    margin-right:25px;
+}
+.sell-on-etsy{
+    margin-right:20px;
+    width:80px;
+    color:rgb(31,31,31);
+    
+}
+.register{
+    margin-right:20px;
+    color:rgb(31,31,31);
+   
+}
+button.sign-in{
+    height: 35px;
+    width: 80px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 20px;
+    font-size: 13px;
+    white-space: nowrap;
+    
+}
+
+.cart-logo{
+    height: 25px;
+    width:50px;
+    font-size: 25px;
+    color:#666;
+    text-decoration: none;
+    
+}
+.cart-logo:hover{
+    color:black;
+}
+.cart{
+    color: #666;
+    font-size:15px;
+    margin:0px;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    margin-bottom: 20px;
+    
+}
+i{
+    font-size: 50px;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color:white;
+    border-left: 1px solid rgb(235,235,235);
+}
+ul{
+    margin-bottom: 0px;
+}
+.search-cat{
+    display: flex;
+    justify-content: space-between;
+    margin-top:35px;
+    padding:0px;  
+}
+.search-cat li{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    color:rgb(31,31,31);
+}
+i{
+    display: flex;
+}
+i.fa.fa-gift{
+    margin-right:20px;
+}
+hr{
+    margin:0px;
+}
+ul.bubbles{
+    display: flex;
+    justify-content: flex-start;
+    padding:0px;;
+    
+
+
+}
+
+
+.bubbles li{
+    list-style: none;
+    margin-right: 6px;
+    margin-left:0px;
+    height:35px;
+    color: rgb(31,31,31);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    line-height: 35px;
+    background-color: rgb(247,147,111);
+
+}
+
+/*///////////   BEGINNING OF GRID FOR ITEMS JS  ///////////////*/
+
+.main-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width:1200px;
+    grid-area: "aside main-divs main-divs main-divs main-divs";
+    list-style: none;
+    
+    
+}
+.main-divsbox{
+    margin-top:20px;
+}
+.aside{
+    padding-right:50px;
+}
+
+#main-divs {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin:0px;
+    padding:0px;
+    gap:10px;
+
+    
+}
+#main-divs li{
+    list-style: none;
+    text-decoration: none;
+    padding:0px;
+    
+
+    
+    
+}
+#main-divs ul{
+    padding:0px;
+    border: 1px solid black;
+}
+.title{
+    color:black;
+    width:250px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.made-by{
+    color:#333;
+}
+.price{
+    color:black;
+    font-size: 20px;
+}
+
+
+/* ////////////////////////////// BEGINNING OF SIDE BAR CSS */
+ul.aside-list li{
+    list-style: none;
+    margin-bottom: 10px;
+    color: rgb(53,53,53);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right:50px;
+    padding-left: 0px;
+ 
+}
+ul.aside-list {
+    padding-left: 0px;
+}
+.checkbox {
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+select{
+    width: 150px;
+    height: 30px;
+}
+.lowtohigh{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    width:200px;
+}
+.lowtohigh input{
+    width:70px;
+    height:40px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+li.boxes{
+    width: 50px;
+    
+}
+input{
+    outline:none;
+    
+    
+}
+.locationbox{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+
+}
+a:hover{
+    display:pointer;
+    text-decoration: underline;
+}
+.show-more:hover{
+    background-color:#ccc;
+    border-radius: 20px;
+    width:150px;
+    text-align: center;
+}

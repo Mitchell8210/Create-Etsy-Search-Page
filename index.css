@@ -8,9 +8,6 @@ html{ box-sizing: border-box}
     flex-direction: column;
     margin-bottom: 300px;
 }
-
-   
-
 .search{
     display: flex;
     height:50px;
@@ -34,8 +31,6 @@ i.fa-search:hover{
     color:rgb(236,85,38);
     font-size: 45px;
     margin-right: 6px;
-    
-
 }
 .search-bar input{
     width:800px;
@@ -50,13 +45,14 @@ i.fa-search:hover{
 .sell-on-etsy{
     margin-right:20px;
     width:80px;
-    color:rgb(31,31,31);
-    
+    color:rgb(31,31,31); 
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
 }
 .register{
     margin-right:20px;
     color:rgb(31,31,31);
-   
+    font-family: Arial, Helvetica, sans-serif;
 }
 button.sign-in{
     height: 35px;
@@ -66,20 +62,17 @@ button.sign-in{
     margin-right: 20px;
     font-size: 13px;
     white-space: nowrap;
-    
 }
 button.sign-in:hover{
     background-color: rgb(60,60,60);
     color:white;
 }
-
 .cart-logo{
     height: 25px;
     width:50px;
     font-size: 25px;
     color:#666;
     text-decoration: none;
-    
 }
 .cart-logo:hover{
     color:black;
@@ -92,7 +85,7 @@ button.sign-in:hover{
 }
 a{
     text-decoration: none;
-    margin-bottom: 20px;
+    
     
 }
 i{
@@ -142,8 +135,6 @@ ul.bubbles{
     justify-content: flex-start;
     padding:0px;;
 }
-
-
 .bubbles li{
     list-style: none;
     margin-right: 6px;
@@ -157,6 +148,7 @@ ul.bubbles{
     border-radius: 20px;
     line-height: 35px;
     background-color: rgb(247,147,111);
+    transition: .2s ease;
 }
 .bubbles a{
     color: rgb(31,31,31);
@@ -167,6 +159,7 @@ ul.bubbles{
 .bubbles li:hover{
     background-color: rgb(246,134,97);
     cursor: pointer;
+    transform:scale(1.03);
 }
 
 /*///////////   BEGINNING OF GRID FOR ITEMS JS  ///////////////*/
@@ -178,7 +171,6 @@ ul.bubbles{
     grid-area: "aside main-divs main-divs main-divs main-divs";
     list-style: none;
     text-decoration: none;
-    
 }
 .main-divsbox{
     margin-top:20px;
@@ -189,9 +181,7 @@ ul.bubbles{
     justify-content: space-around;
     padding-right:50px;
     text-align: center;
-    
 }
-
 #main-divs {
     display:grid;
     grid-template-columns: repeat(4, 1fr);
@@ -199,25 +189,18 @@ ul.bubbles{
     padding:0px;
     gap:10px;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 #main-divs li{
     list-style: none;
     text-decoration: none;
     padding:0px;
-    
-
-
 }
-
 #main-divs ul{
     padding:0px;
-    
 }
 #main-divs .img{
     border-radius: 70px;
     display: flex;
-    
 }
 .img{
     position: relative;
@@ -226,7 +209,6 @@ ul.bubbles{
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     text-decoration: none;
     border-radius: 3px;
-    
 }
 .main-divs li:hover{
     text-decoration: none;
@@ -237,7 +219,6 @@ a.mainlist:hover{
 a.mainlist:hover i.fa-heart{
     text-decoration: none;
     opacity: 1;
-
 }
 a.mainlist:hover img{
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -288,16 +269,14 @@ li.views{
     height:21px;
     width:106px;
     background-repeat: no-repeat;
-
 }
 .rate{
     background-image: url(http://i.stack.imgur.com/oZ9Id.png);
     background-position: 0px -100px;
     height:21px;
     width:106px;
-    width:25%;
+    width:70%;
     background-repeat: no-repeat;
-
 }
 .when-made{
     color: rgb(31,31,31);
@@ -314,16 +293,15 @@ ul.aside-list li{
     margin-right:50px;
     padding-left: 0px;
     display: flex;
-    
     white-space: nowrap;
-    
- 
+}
+ul.aside-list a{
+    color:rgb(34,34,34);
 }
 ul.aside-list {
     padding-left: 0px;
     margin-top:-680px;
 }
-
 select{
     width: 220px;
     height: 30px;
@@ -341,8 +319,6 @@ div.lowtohigh{
 .lowtohight{
     padding:0px;
     margin-right:10px;
-    
-
 }
 .lowtohigh input{
     width:70px;
@@ -354,7 +330,6 @@ div.lowtohigh{
 li.boxes{
     width: 50px;
     margin-right:0px;
-    
 }
 .low{
     margin-right:10px;
@@ -362,11 +337,8 @@ li.boxes{
 .high{
     margin-right:10px;
 }
-
 input{
     outline:none;
-    
-    
 }
 .locationboxes{
     width:140px;
@@ -375,7 +347,6 @@ input{
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
-
 }
 a:hover{
     display:pointer;
@@ -386,7 +357,6 @@ a:hover{
 }
 .fa.fa-plus{
     font-size: 18px;
-    
 }
 .show-more:hover{
     display: flex;
@@ -399,14 +369,11 @@ a:hover{
 }
 li.all-cats, .show-more{
     font-weight: bold;
-
 }
-
 .fa-chevron-right{
     color:rgb(31,31,31);
 }
 input.locationbox{
-    
     margin-right: 20px;
     height: 35px;
     width: 122px;
@@ -416,7 +383,6 @@ input.locationbox{
     margin-top: -3px;
     border:1px solid #ccc;
 }
-
 label:hover{
     text-decoration: underline;
 }
@@ -438,6 +404,9 @@ i.chev::before{
     15px;
     display: flex;
     white-space: nowrap;
+}
+.category1 a{
+    color:rgb(34,34,34);
 }
 .category2{
     margin-right:562px;
@@ -484,4 +453,7 @@ footer{
 }
 .pages a:hover{
     text-decoration: none;
+}
+.pages a{
+    color:rgb(34,34,34);
 }

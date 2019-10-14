@@ -239,7 +239,7 @@ i.fa-heart{
     color: white;
     border: 6px solid black;
 }
-.title{
+li.title{
     color:black;
     width:250px;
     text-overflow: ellipsis;

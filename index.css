@@ -16,6 +16,19 @@ html{ box-sizing: border-box}
     height:50px;
     margin-top:15px;
     align-items: baseline;
+    position: relative;
+}
+i.fa-search{
+    position: absolute;
+    font-size: 28px;
+    color: black;
+    background-color: rgb(239,239,239);
+    right: 343px;
+    top: 14px;
+    padding:7px;
+}
+i.fa-search:hover{
+    background-color:rgb(224,224,224);
 }
 .logo{
     color:rgb(236,85,38);
@@ -49,11 +62,15 @@ button.sign-in{
     height: 35px;
     width: 80px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid rgb(34,34,34);
     margin-right: 20px;
     font-size: 13px;
     white-space: nowrap;
     
+}
+button.sign-in:hover{
+    background-color: rgb(60,60,60);
+    color:white;
 }
 
 .cart-logo{
@@ -96,12 +113,20 @@ ul{
     justify-content: space-between;
     margin-top:35px;
     padding:0px;  
+    list-style: none;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
-.search-cat li{
+.search-cat a{
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
     color:rgb(31,31,31);
+    padding-bottom: 20px;
+}
+.search-cat a:hover{
+    text-decoration: none;
+    border-bottom: 2px solid black;
 }
 i{
     display: flex;
@@ -116,9 +141,6 @@ ul.bubbles{
     display: flex;
     justify-content: flex-start;
     padding:0px;;
-    
-
-
 }
 
 
@@ -135,7 +157,16 @@ ul.bubbles{
     border-radius: 20px;
     line-height: 35px;
     background-color: rgb(247,147,111);
-
+}
+.bubbles a{
+    color: rgb(31,31,31);
+}
+.bubbles a:hover{
+    text-decoration: none;
+}
+.bubbles li:hover{
+    background-color: rgb(246,134,97);
+    cursor: pointer;
 }
 
 /*///////////   BEGINNING OF GRID FOR ITEMS JS  ///////////////*/
@@ -146,14 +177,19 @@ ul.bubbles{
     width:1200px;
     grid-area: "aside main-divs main-divs main-divs main-divs";
     list-style: none;
-    
+    text-decoration: none;
     
 }
 .main-divsbox{
     margin-top:20px;
 }
 .aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding-right:50px;
+    text-align: center;
+    
 }
 
 #main-divs {
@@ -162,7 +198,7 @@ ul.bubbles{
     margin:0px;
     padding:0px;
     gap:10px;
-
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 #main-divs li{
@@ -171,12 +207,56 @@ ul.bubbles{
     padding:0px;
     
 
-    
-    
+
 }
+
 #main-divs ul{
     padding:0px;
-    border: 1px solid black;
+    
+}
+#main-divs .img{
+    border-radius: 70px;
+    display: flex;
+    
+}
+.img{
+    position: relative;
+}
+#main-divs img:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-decoration: none;
+    border-radius: 3px;
+    
+}
+.main-divs li:hover{
+    text-decoration: none;
+}
+a.mainlist:hover{
+    text-decoration: none;
+}
+a.mainlist:hover i.fa-heart{
+    text-decoration: none;
+    opacity: 1;
+
+}
+a.mainlist:hover img{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.heart{
+    position: relative;
+    height:50px;
+    width:50px;
+}
+i.fa-heart{
+    position: absolute;
+    bottom: 297px;
+    left: 212px;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .4s ease-in-out;
+    color: white;
+    border: 6px solid black;
 }
 .title{
     color:black;
@@ -184,74 +264,224 @@ ul.bubbles{
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    font-size: 15px;
+    text-decoration: none;
 }
 .made-by{
-    color:#333;
+    color:rgb(79,79,79);
+    font-size: 12px;
 }
 .price{
     color:black;
-    font-size: 20px;
+    font-size: 15px;
 }
+li.views{
+    color: rgb(79,79,79);
+    text-decoration: none;
+}
+li.views{
+    display: flex;
+    font-size: 15px;
+}
+.rating{
+    background-image: url(http://i.stack.imgur.com/oZ9Id.png);
+    height:21px;
+    width:106px;
+    background-repeat: no-repeat;
 
+}
+.rate{
+    background-image: url(http://i.stack.imgur.com/oZ9Id.png);
+    background-position: 0px -100px;
+    height:21px;
+    width:106px;
+    width:25%;
+    background-repeat: no-repeat;
+
+}
+.when-made{
+    color: rgb(31,31,31);
+    font-size: 15px;
+}
 
 /* ////////////////////////////// BEGINNING OF SIDE BAR CSS */
 ul.aside-list li{
     list-style: none;
     margin-bottom: 10px;
     color: rgb(53,53,53);
-    font-size: 20px;
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     margin-right:50px;
     padding-left: 0px;
+    display: flex;
+    
+    white-space: nowrap;
+    
  
 }
 ul.aside-list {
     padding-left: 0px;
-}
-.checkbox {
-    font-size: 20px;
-    border: 1px solid black;
+    margin-top:-680px;
 }
 
 select{
-    width: 150px;
+    width: 220px;
     height: 30px;
+    border:1px solid rgb(164,164,160);
+    background-color: white;
 }
-.lowtohigh{
+div.lowtohigh{
     display: flex;
     align-items: baseline;
-    justify-content: space-around;
-    width:200px;
+    width:0px;
+    justify-content: flex-start;
+    margin-left:17px;
+    margin-top:-5px;
+}
+.lowtohight{
+    padding:0px;
+    margin-right:10px;
+    
+
 }
 .lowtohigh input{
     width:70px;
     height:40px;
     border: 1px solid #ccc;
-    padding-left: 5px;
+    padding-left: 10px;
     border-radius: 10px;
 }
 li.boxes{
     width: 50px;
+    margin-right:0px;
     
 }
+.low{
+    margin-right:10px;
+}
+.high{
+    margin-right:10px;
+}
+
 input{
     outline:none;
     
     
 }
+.locationboxes{
+    width:140px;
+}
 .locationbox{
     display: flex;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: flex-start;
 
 }
 a:hover{
     display:pointer;
     text-decoration: underline;
 }
+.show-more{
+    color:rgb(106,106,106);
+}
+.fa.fa-plus{
+    font-size: 18px;
+    
+}
 .show-more:hover{
+    display: flex;
+    align-items: center;
     background-color:#ccc;
     border-radius: 20px;
     width:150px;
     text-align: center;
+    padding-left: 10px;
+}
+li.all-cats, .show-more{
+    font-weight: bold;
+
+}
+
+.fa-chevron-right{
+    color:rgb(31,31,31);
+}
+input.locationbox{
+    
+    margin-right: 20px;
+    height: 35px;
+    width: 122px;
+    margin-left: 19px;
+    border-radius: 6px;
+    padding-left: 10px;
+    margin-top: -3px;
+    border:1px solid #ccc;
+}
+
+label:hover{
+    text-decoration: underline;
+}
+i.chev::before{
+    margin-right:20px;
+}
+
+/* ////////////////////////////*/
+/* LINE BETWEEN IMAGES AND HEADER */
+
+.category-results{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top:-25px;
+}
+.category1{
+    margin-right:
+    15px;
+    display: flex;
+    white-space: nowrap;
+}
+.category2{
+    margin-right:562px;
+    white-space: nowrap;
+}
+.category3{
+    display: flex;
+    white-space: nowrap;
+}
+.category1 i{
+    font-size: 15px;
+}
+footer{
+   height:600px;
+    background: url("https://watercoloraffair.com/wp-content/uploads/2018/03/tone-and-depth.jpg") no-repeat center center fixed; 
+    /* -webkit-background-size: cover; */
+    /* -moz-background-size: cover;
+    -o-background-size: cover; */
+    background-size: cover;
+    margin-top:-200px;
+    padding:0px;
+}
+.nextPage{
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+    margin-bottom:-66px;
+    align-content: center;
+}
+.pages{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 50%;
+    margin-right:10px;
+    background-color: rgb(239,239,239);
+    height:40px;
+    width:40px;
+    text-align: center;
+    line-height:42px;
+}
+.pages:hover{
+    background-color:rgb(222,222,222);
+    text-decoration: none;
+}
+.pages a:hover{
+    text-decoration: none;
 }
